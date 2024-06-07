@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="283.0" prefWidth="372.0" style="-fx-background-color: #20B2AA;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ir.ac.kntu.LoginPage">
+   <children>
+      <TextField fx:id="usernameTextField" alignment="CENTER" layoutX="164.0" layoutY="60.0" prefHeight="30.0" prefWidth="192.0" promptText="username" style="-fx-background-color: #D8BFD8;">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passwordPasswordField" alignment="CENTER" layoutX="164.0" layoutY="111.0" prefHeight="30.0" prefWidth="192.0" promptText="password" style="-fx-background-color: #D8BFD8;">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </PasswordField>
+      <JFXButton fx:id="loginButton" buttonType="RAISED" layoutX="214.0" layoutY="151.0" onMouseClicked="#pressLoginButton" prefHeight="41.0" prefWidth="65.0" text="login">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </JFXButton>
+      <RadioButton fx:id="userButton" layoutX="39.0" layoutY="58.0" mnemonicParsing="false" onAction="#pressUserButton" selected="true" text="user" />
+      <RadioButton fx:id="adminButton" layoutX="39.0" layoutY="81.0" mnemonicParsing="false" onAction="#pressAdminButton" text="admin" />
+      <RadioButton fx:id="developerButton" layoutX="39.0" layoutY="102.0" mnemonicParsing="false" onAction="#pressDeveloperButton" prefHeight="18.0" prefWidth="88.0" text="developer" />
+      <RadioButton fx:id="sellerButton" layoutX="39.0" layoutY="127.0" mnemonicParsing="false" onAction="#pressSellerButton" text="seller" />
+      <Label layoutX="7.0" layoutY="226.0" prefHeight="31.0" prefWidth="275.0" text="you don't have an account?">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="singInButton" layoutX="272.0" layoutY="223.0" onMouseClicked="#pressSingInButton" prefHeight="31.0" prefWidth="74.0" text="sign in">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="104.0" layoutY="7.0" prefHeight="18.0" prefWidth="192.0" text="Login Page">
+         <font>
+            <Font name="System Bold Italic" size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="22.0" layoutY="193.0" prefHeight="30.0" prefWidth="328.0" textAlignment="CENTER" textFill="RED" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="exitButton" layoutX="13.0" layoutY="16.0" onMouseClicked="#pressExitButton" text="EXIT">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

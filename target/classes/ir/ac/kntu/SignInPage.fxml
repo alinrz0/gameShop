@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="signInPage" prefHeight="423.0" prefWidth="490.0" style="-fx-background-color: #20B2AA;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ir.ac.kntu.SignInPage">
+   <children>
+      <TextField fx:id="usernameText" alignment="CENTER" layoutX="40.0" layoutY="125.0" prefHeight="33.0" prefWidth="184.0" promptText="username" style="-fx-background-color: #D8BFD8;">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="emailText" alignment="CENTER" layoutX="273.0" layoutY="189.0" prefHeight="34.0" prefWidth="184.0" promptText="email" style="-fx-background-color: #D8BFD8;">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="firstNameText" alignment="CENTER" layoutX="40.0" layoutY="64.0" prefHeight="34.0" prefWidth="184.0" promptText="first name" style="-fx-background-color: #D8BFD8;">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="lastNameText" alignment="CENTER" layoutX="273.0" layoutY="64.0" prefHeight="34.0" prefWidth="184.0" promptText="last name" style="-fx-background-color: #D8BFD8;">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </TextField>
+      <Label fx:id="signInLabel" alignment="CENTER" layoutX="161.0" layoutY="24.0" prefHeight="18.0" prefWidth="173.0" text="Sign in">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordText" alignment="CENTER" layoutX="40.0" layoutY="258.0" prefHeight="34.0" prefWidth="184.0" promptText="password" style="-fx-background-color: #D8BFD8;">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="repeatPasswordText" alignment="CENTER" layoutX="273.0" layoutY="258.0" prefHeight="34.0" prefWidth="184.0" promptText="repeat password" style="-fx-background-color: #D8BFD8;">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="phoneText" alignment="CENTER" layoutX="40.0" layoutY="191.0" prefHeight="33.0" prefWidth="184.0" promptText="phone" style="-fx-background-color: #D8BFD8;">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="ageText" alignment="CENTER" layoutX="273.0" layoutY="125.0" prefHeight="33.0" prefWidth="184.0" promptText="age" style="-fx-background-color: #D8BFD8;">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="doneButton" layoutX="207.0" layoutY="369.0" onMouseClicked="#pressDoneButton" text="Done">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="backButton" layoutX="8.0" layoutY="16.0" onMouseClicked="#pressBackButton" text="back">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="exitButton" layoutX="402.0" layoutY="18.0" onMouseClicked="#pressExitButton" text="EXIT">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="51.0" layoutY="323.0" prefHeight="46.0" prefWidth="388.0" textFill="#f70000" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <JFXRadioButton fx:id="sellerButton" layoutX="382.0" layoutY="323.0" onMouseClicked="#pressSellerButton" text="seller" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <selectedColor>
+            <Color red="0.02959064394235611" green="0.34736841917037964" blue="0.18847952783107758" />
+         </selectedColor>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="adminButton" layoutX="382.0" layoutY="346.0" onMouseClicked="#pressAdminButton" text="admin" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <selectedColor>
+            <Color red="0.02959064394235611" green="0.34736841917037964" blue="0.18847952783107758" />
+         </selectedColor>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="userButton" layoutX="280.0" layoutY="346.0" onMouseClicked="#pressUserButton" selected="true" text="user" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <selectedColor>
+            <Color red="0.02959064394235611" green="0.34736841917037964" blue="0.18847952783107758" />
+         </selectedColor>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="developerButton" layoutX="280.0" layoutY="323.0" onMouseClicked="#pressDeveloperButton" text="developer" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <selectedColor>
+            <Color red="0.02959064394235611" green="0.34736841917037964" blue="0.18847952783107758" />
+         </selectedColor>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="levelButton1" layoutX="25.0" layoutY="325.0" onMouseClicked="#pressLevelButton1" selected="true" text="LEVEL_1" visible="false">
+         <selectedColor>
+            <Color red="0.010292397812008858" green="0.2526315748691559" blue="0.1314619928598404" />
+         </selectedColor>
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="levelButton2" layoutX="25.0" layoutY="350.0" onMouseClicked="#pressLevelButton2" text="LEVEL_2" visible="false">
+         <selectedColor>
+            <Color red="0.010292397812008858" green="0.2526315748691559" blue="0.1314619928598404" />
+         </selectedColor>
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="levelButton3" layoutX="25.0" layoutY="377.0" onMouseClicked="#pressLevelButton3" text="LEVEL_3" visible="false">
+         <selectedColor>
+            <Color red="0.010292397812008858" green="0.2526315748691559" blue="0.1314619928598404" />
+         </selectedColor>
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </JFXRadioButton>
+   </children>
+</AnchorPane>

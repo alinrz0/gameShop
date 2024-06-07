@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="646.0" prefWidth="674.0" style="-fx-background-color: #20B2AA;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ir.ac.kntu.EquipmentPage">
+   <children>
+      <Label fx:id="gameName" alignment="CENTER" ellipsisString="" layoutX="198.0" layoutY="22.0" prefHeight="58.0" prefWidth="278.0" textFill="#961f94" textOverrun="LEADING_WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold Italic" size="38.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="1.0" green="0.7937654256820679" blue="0.04814814776182175" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <JFXButton fx:id="exitButton" layoutX="20.0" layoutY="14.0" onMouseClicked="#pressExitButton" prefHeight="58.0" prefWidth="88.0" text="EXIT">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="backButton" layoutX="561.0" layoutY="14.0" onMouseClicked="#pressBackButton" prefHeight="58.0" prefWidth="88.0" text="Back">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </JFXButton>
+      <JFXTextArea fx:id="informationText" editable="false" layoutX="381.0" layoutY="158.0" prefHeight="354.0" prefWidth="278.0" style="-fx-background-color: #ADFF2F;" />
+      <Label layoutX="381.0" layoutY="109.0" prefHeight="30.0" prefWidth="150.0" text="information:" textFill="#2e0c5c">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="218.0" prefHeight="30.0" prefWidth="110.0" text="device:" textFill="#2e0c5c">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="gameNameLabel" layoutX="20.0" layoutY="85.0" prefHeight="28.0" prefWidth="74.0" text="name:" textFill="#2e0c5c" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="gameNameText" layoutX="151.0" layoutY="82.0" prefHeight="38.0" prefWidth="194.0" style="-fx-background-color: #D8BFD8;" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </TextField>
+      <Label fx:id="compatibleAndRefreshRateLabel" layoutX="20.0" layoutY="259.0" prefHeight="30.0" prefWidth="110.0" textFill="#2e0c5c">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="compatibleAndRefreshRateText" editable="false" layoutX="151.0" layoutY="255.0" prefHeight="38.0" prefWidth="194.0" style="-fx-background-color: #20B2AA;">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </TextField>
+      <Label fx:id="deviceText" layoutX="151.0" layoutY="218.0" prefHeight="30.0" prefWidth="194.0">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="deviceItems" contentDisplay="TOP" layoutX="151.0" layoutY="217.0" mnemonicParsing="false" popupSide="RIGHT" prefHeight="31.0" prefWidth="194.0" style="-fx-background-color: #D8BFD8#20B2AA;" text="device" visible="false">
+         <items>
+            <MenuItem fx:id="monitorItem" mnemonicParsing="false" text="manitor" />
+            <MenuItem fx:id="gamingControllerItem" mnemonicParsing="false" text="gamingController" />
+         </items>
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </MenuButton>
+      <Label fx:id="wireAndSizeLabel" layoutX="20.0" layoutY="305.0" prefHeight="30.0" prefWidth="126.0" textFill="#2e0c5c">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sizeText" editable="false" layoutX="151.0" layoutY="301.0" prefHeight="38.0" prefWidth="194.0" style="-fx-background-color: #20B2AA;">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </TextField>
+      <MenuButton fx:id="connectionItems" contentDisplay="TOP" layoutX="151.0" layoutY="301.0" mnemonicParsing="false" popupSide="RIGHT" prefHeight="36.0" prefWidth="194.0" style="-fx-background-color: #D8BFD8#20B2AA;" text="connection" visible="false">
+         <items>
+            <MenuItem fx:id="wirelessItem" mnemonicParsing="false" text="wireless" />
+            <MenuItem fx:id="withWireItem" mnemonicParsing="false" text="withWire" />
+         </items>
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </MenuButton>
+      <Label fx:id="timeResponseLabel" layoutX="20.0" layoutY="360.0" prefHeight="30.0" prefWidth="126.0" text="time response:" textFill="#2e0c5c">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="timeResponseText" editable="false" layoutX="151.0" layoutY="355.0" prefHeight="38.0" prefWidth="194.0" style="-fx-background-color: #20B2AA;">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </TextField>
+      <ImageView fx:id="imageAddress" fitHeight="118.0" fitWidth="118.0" layoutX="170.0" layoutY="408.0" onMouseClicked="#pressImage" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@image/download.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="imageLabel" layoutX="20.0" layoutY="437.0" prefHeight="28.0" prefWidth="74.0" text="image:" textFill="#2e0c5c" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="button1" layoutX="270.0" layoutY="579.0" onMouseClicked="#pressButton1" prefHeight="46.0" prefWidth="150.0" text="Buy">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="button2" layoutX="498.0" layoutY="579.0" onMouseClicked="#pressButton2" prefHeight="46.0" prefWidth="150.0" text="Community" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="numberLabel" layoutX="20.0" layoutY="132.0" prefHeight="30.0" prefWidth="88.0" text="number:" textFill="#2e0c5c" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="numberText" layoutX="151.0" layoutY="128.0" prefHeight="38.0" prefWidth="194.0" style="-fx-background-color: #D8BFD8;" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="feedbacksButton" layoutX="20.0" layoutY="583.0" onMouseClicked="#pressFeedbacksButton" text="1" visible="false">
+         <graphic>
+            <ImageView fitHeight="38.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/2878566.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="20.0" layoutY="175.0" prefHeight="28.0" prefWidth="74.0" text="price:" textFill="#2e0c5c">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="priceText" editable="false" layoutX="151.0" layoutY="171.0" prefHeight="38.0" prefWidth="194.0" style="-fx-background-color: #20B2AA;">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="crashReportButton" layoutX="8.0" layoutY="579.0" onMouseClicked="#pressCrashReportButton" prefHeight="46.0" prefWidth="150.0" text="crash report" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="errorLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="536.0" prefHeight="36.0" prefWidth="346.0">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="485.0" prefWidth="862.0" style="-fx-background-color: #20B2AA;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ir.ac.kntu.Community">
+   <children>
+      <JFXButton fx:id="exitButton" layoutX="14.0" layoutY="14.0" onMouseClicked="#pressExitButton" prefHeight="58.0" prefWidth="88.0" text="EXIT">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="backButton" layoutX="760.0" layoutY="14.0" onMouseClicked="#pressBackButton" prefHeight="58.0" prefWidth="88.0" text="Back">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </JFXButton>
+      <JFXTextArea fx:id="yourOpinion" layoutX="569.0" layoutY="149.0" prefHeight="306.0" prefWidth="270.0" style="-fx-background-color: #ADFF2F;" />
+      <JFXTextArea fx:id="communityTexts" editable="false" layoutX="14.0" layoutY="149.0" prefHeight="306.0" prefWidth="514.0" style="-fx-background-color: #ADFF2F;" />
+      <Label alignment="CENTER" ellipsisString="" layoutX="301.0" layoutY="27.0" prefHeight="58.0" prefWidth="259.0" text="Community" textFill="#961f94" textOverrun="LEADING_WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold Italic" size="38.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="1.0" green="0.7937654256820679" blue="0.04814814776182175" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <JFXButton fx:id="sendButton" layoutX="787.0" layoutY="409.0" onMouseClicked="#send" prefHeight="45.0" prefWidth="52.0" text="1">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/download%20(1).png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="569.0" layoutY="108.0" prefHeight="30.0" prefWidth="234.0" text="write your opinion here:">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

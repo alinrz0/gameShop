@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="287.0" prefWidth="309.0" style="-fx-background-color: #20B2AA;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ir.ac.kntu.Wallet">
+   <children>
+      <Label alignment="CENTER" ellipsisString="" layoutX="70.0" layoutY="12.0" prefHeight="58.0" prefWidth="150.0" text="Wallet" textFill="#961f94" textOverrun="LEADING_WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold Italic" size="38.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="1.0" green="0.7937654256820679" blue="0.04814814776182175" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <JFXButton fx:id="exitButton" layoutY="20.0" onMouseClicked="#pressExitButton" prefHeight="43.0" prefWidth="70.0" text="EXIT">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="backButton" layoutX="220.0" layoutY="16.0" onMouseClicked="#pressBackButton" text="Back">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="chargeButton" layoutX="102.0" layoutY="151.0" onMouseClicked="#pressChargeButton" prefHeight="46.0" prefWidth="105.0" text="Charge">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="amount" alignment="CENTER" layoutX="70.0" layoutY="103.0" prefHeight="34.0" prefWidth="184.0" promptText="amount" style="-fx-background-color: #D8BFD8;">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </TextField>
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="26.0" layoutY="208.0" prefHeight="37.0" prefWidth="258.0" text="Label" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

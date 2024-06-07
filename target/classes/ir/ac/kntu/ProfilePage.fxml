@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="profilePage" prefHeight="653.0" prefWidth="436.0" style="-fx-background-color: #20B2AA;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ir.ac.kntu.ProfilePage">
+   <children>
+      <Label alignment="CENTER" ellipsisString="" layoutX="128.0" layoutY="31.0" prefHeight="58.0" prefWidth="190.0" text="Profile" textFill="#961f94" textOverrun="LEADING_WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold Italic" size="38.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="1.0" green="0.7937654256820679" blue="0.04814814776182175" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <JFXButton fx:id="exitButton" layoutX="37.0" layoutY="42.0" onMouseClicked="#pressExitButton" text="EXIT">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="backButton" layoutX="344.0" layoutY="42.0" onMouseClicked="#pressBackButton" text="Back">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="usernameText" alignment="CENTER" layoutX="137.0" layoutY="220.0" prefHeight="33.0" prefWidth="184.0" promptText="username" style="-fx-background-color: #D8BFD8;">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="emailText" alignment="CENTER" layoutX="137.0" layoutY="380.0" prefHeight="34.0" prefWidth="184.0" promptText="email" style="-fx-background-color: #D8BFD8;">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="firstNameText" alignment="CENTER" layoutX="134.0" layoutY="108.0" prefHeight="34.0" prefWidth="184.0" promptText="first name" style="-fx-background-color: #D8BFD8;">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="lastNameText" alignment="CENTER" layoutX="137.0" layoutY="164.0" prefHeight="34.0" prefWidth="184.0" promptText="last name" style="-fx-background-color: #D8BFD8;">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passwordText" accessibleRole="TEXT_FIELD" alignment="CENTER" layoutX="137.0" layoutY="430.0" prefHeight="34.0" prefWidth="184.0" promptText="password" style="-fx-background-color: #D8BFD8;">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="phoneText" alignment="CENTER" layoutX="137.0" layoutY="330.0" prefHeight="33.0" prefWidth="184.0" promptText="phone" style="-fx-background-color: #D8BFD8;">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="ageText" alignment="CENTER" layoutX="137.0" layoutY="273.0" prefHeight="33.0" prefWidth="184.0" promptText="age" style="-fx-background-color: #D8BFD8;">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="7.0" layoutY="110.0" prefHeight="32.0" prefWidth="114.0" text="first name:" textFill="#2e0c5c">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="380.0" prefHeight="32.0" prefWidth="114.0" text="email:" textFill="#2e0c5c">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="331.0" prefHeight="32.0" prefWidth="114.0" text="Phone:" textFill="#2e0c5c">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="274.0" prefHeight="32.0" prefWidth="114.0" text="age:" textFill="#2e0c5c">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="221.0" prefHeight="32.0" prefWidth="114.0" text="username:" textFill="#2e0c5c">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="166.0" prefHeight="32.0" prefWidth="114.0" text="last name:" textFill="#2e0c5c">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="432.0" prefHeight="32.0" prefWidth="114.0" text="password:" textFill="#2e0c5c">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="walletLabel" alignment="CENTER" layoutX="14.0" layoutY="485.0" prefHeight="32.0" prefWidth="114.0" text="wallet:" textFill="#2e0c5c" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="doneButton" layoutX="178.0" layoutY="601.0" onMouseClicked="#pressDoneButton" text="Done">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="12.0" layoutY="527.0" prefHeight="82.0" prefWidth="388.0" textFill="#f70000" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="chargeButton" layoutX="331.0" layoutY="478.0" mnemonicParsing="false" onMouseClicked="#pressChargeButton" prefHeight="41.0" prefWidth="54.0" style="-fx-background-color: #20B2AA;" visible="false">
+         <graphic>
+            <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@image/pngtree-orange-wallet-icon-image_1168655.jpg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="SW_RESIZE" />
+               </cursor>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TextField fx:id="walletText" alignment="CENTER" editable="false" layoutX="137.0" layoutY="485.0" prefHeight="34.0" prefWidth="184.0" promptText="wallet" style="-fx-background-color: #D8BFD8;" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
